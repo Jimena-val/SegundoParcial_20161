@@ -1,11 +1,13 @@
 package com.example.segundoparcial_20161.ui.theme.libro
 
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
@@ -29,29 +31,6 @@ import com.example.segundoparcial_20161.R
 @Composable
 
 fun PantallaDragones(navegante: NavHostController) {
-    Column (modifier = Modifier.fillMaxSize()){
-        Row(
-            modifier = Modifier
-                .fillMaxWidth()
-                .padding(16.dp),
-            verticalAlignment = Alignment.CenterVertically
-        ) {
-            Text(
-                text = "Elige un Dragón",
-                style = MaterialTheme.typography.titleLarge,
-                fontWeight = FontWeight.Bold,
-                letterSpacing = 1.5.sp
-            )
-            Spacer(modifier = Modifier.width(12.dp))
-            Button(
-                onClick = {
-                    navegante.navigate(Inicio)
-                }
-            ) {
-                Text(text = "Cerrar Libro")
-            }
-        }
-    }
     Spacer(modifier = Modifier.padding(50.dp))
     LazyColumn(modifier = Modifier.fillMaxSize()) {
         item {
@@ -82,6 +61,7 @@ fun PantallaDragones(navegante: NavHostController) {
             Card(
                 modifier = Modifier
                     .fillMaxWidth()
+                    .height(250.dp)
                     .padding(20.dp)
             ) {
                 Row(modifier = Modifier.padding(12.dp)) {
@@ -91,7 +71,9 @@ fun PantallaDragones(navegante: NavHostController) {
                         modifier = Modifier
                             .size(200.dp)
                             .clip(RoundedCornerShape(12.dp))
-                    )
+                            //.clickable(navegante.navigate(PantallaInformativa)
+
+                        )
                     Spacer(modifier = Modifier.padding(12.dp))
                     Column {
                         Text(text = "Trueno Tambor")
@@ -102,6 +84,7 @@ fun PantallaDragones(navegante: NavHostController) {
             Card(
                 modifier = Modifier
                     .fillMaxWidth()
+                    .height(250.dp)
                     .padding(20.dp)
             ) {
                 Row(modifier = Modifier.padding(12.dp)) {
@@ -111,6 +94,7 @@ fun PantallaDragones(navegante: NavHostController) {
                         modifier = Modifier
                             .size(200.dp)
                             .clip(RoundedCornerShape(12.dp))
+
                     )
                     Spacer(modifier = Modifier.padding(12.dp))
                     Column {
@@ -122,6 +106,7 @@ fun PantallaDragones(navegante: NavHostController) {
             Card(
                 modifier = Modifier
                     .fillMaxWidth()
+                    .height(250.dp)
                     .padding(20.dp)
             ) {
                 Row(modifier = Modifier.padding(12.dp)) {
@@ -142,6 +127,7 @@ fun PantallaDragones(navegante: NavHostController) {
             Card(
                 modifier = Modifier
                     .fillMaxWidth()
+                    .height(250.dp)
                     .padding(20.dp)
             ) {
                 Row(modifier = Modifier.padding(12.dp)) {
@@ -162,6 +148,7 @@ fun PantallaDragones(navegante: NavHostController) {
             Card(
                 modifier = Modifier
                     .fillMaxWidth()
+                    .height(250.dp)
                     .padding(20.dp)
             ) {
                 Row(modifier = Modifier.padding(12.dp)) {
@@ -182,6 +169,7 @@ fun PantallaDragones(navegante: NavHostController) {
             Card(
                 modifier = Modifier
                     .fillMaxWidth()
+                    .height(250.dp)
                     .padding(20.dp)
             ) {
                 Row(modifier = Modifier.padding(12.dp)) {

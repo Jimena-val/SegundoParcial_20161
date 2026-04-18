@@ -16,6 +16,8 @@ object Inicio
 @Serializable
 object PantallaDragones
 
+@Serializable
+object PantallaInformativa
 
 @Composable
 
@@ -28,6 +30,9 @@ fun NavManager (){
         }
         composable<PantallaDragones> {
             PantallaDragones(navegante = navController)
+        }
+        composable<PantallaInformativa>{
+            PantallaInformativa(navegante= navController)
         }
     }
 }
