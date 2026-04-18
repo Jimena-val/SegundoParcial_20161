@@ -63,6 +63,7 @@ fun PantallaDragones(navegante: NavHostController) {
                     .fillMaxWidth()
                     .height(250.dp)
                     .padding(20.dp)
+                    //.clickable {navegante.navigate(PantallaInformativa}
             ) {
                 Row(modifier = Modifier.padding(12.dp)) {
                     Image(
@@ -71,8 +72,6 @@ fun PantallaDragones(navegante: NavHostController) {
                         modifier = Modifier
                             .size(200.dp)
                             .clip(RoundedCornerShape(12.dp))
-                            //.clickable(navegante.navigate(PantallaInformativa)
-
                         )
                     Spacer(modifier = Modifier.padding(12.dp))
                     Column {
@@ -80,6 +79,7 @@ fun PantallaDragones(navegante: NavHostController) {
                     }
                 }
             }
+            Spacer(modifier = Modifier.padding(8.dp))
             //D2
             Card(
                 modifier = Modifier
@@ -102,6 +102,7 @@ fun PantallaDragones(navegante: NavHostController) {
                     }
                 }
             }
+            Spacer(modifier = Modifier.padding(8.dp))
             //D3
             Card(
                 modifier = Modifier
@@ -123,6 +124,7 @@ fun PantallaDragones(navegante: NavHostController) {
                     }
                 }
             }
+            Spacer(modifier = Modifier.padding(8.dp))
             //D4
             Card(
                 modifier = Modifier
@@ -144,6 +146,7 @@ fun PantallaDragones(navegante: NavHostController) {
                     }
                 }
             }
+            Spacer(modifier = Modifier.padding(8.dp))
             //D5
             Card(
                 modifier = Modifier
@@ -165,6 +168,7 @@ fun PantallaDragones(navegante: NavHostController) {
                     }
                 }
             }
+            Spacer(modifier = Modifier.padding(8.dp))
             //D6
             Card(
                 modifier = Modifier
